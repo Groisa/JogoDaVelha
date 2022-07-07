@@ -1,0 +1,14 @@
+.X {
+    color: red;
+    cursor: not-allowed;
+    
+}
+
+.O {
+    color: black;
+    cursor: not-allowed;
+}
+.gamerOver {
+    opacity: 50%;
+    cursor: not-allowed;
+}
