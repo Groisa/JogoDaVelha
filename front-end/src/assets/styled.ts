@@ -1,3 +1,4 @@
+import { Form, ModalBody } from "react-bootstrap";
 import styled from "styled-components";
 
 export const ContaninerStyled = styled.main`
@@ -111,7 +112,7 @@ export const PlacaStyledO = styled.div`
 
 `
 export const ButtonStyled = styled.div`
- background-color: #FFE53B;
+        background-color: #FFE53B;
         background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
         border: none;
         padding: 10px 50px;
@@ -123,4 +124,69 @@ export const ButtonStyled = styled.div`
             background-color: #FBDA61;
             background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
         }
+`
+export const ModalStyledBody = styled(ModalBody)`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-size: 20px;
+    }
+    div {
+        background-color: #fff;
+        color: #000;
+        border-radius: 50px;
+        padding: 10px;
+        display: flex;
+        font-size: 30px;
+        flex-direction: column;
+        align-items: center;
+        :hover {
+            background-color: #000;
+            color: #fff;  
+            transition: 1s;
+        }
+    }
+`
+export const StyledFormInput = styled(Form)`
+    input {
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        background-color: #FBDA61;
+        background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+        ::placeholder {
+            color: #000;
+        }
+    }
+    button {
+        margin-left: 15px;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        background-color: #FBDA61;
+        background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+        :hover {
+            background-color: #FFE53B;
+            background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+        }
+    }
+`
+
+export const StyledNumberGeneretor = styled.section`
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        background-color: #FFE53B;
+        background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+        :hover {
+            background-color: #FBDA61;
+            background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);  
+        }
+    }
 `
